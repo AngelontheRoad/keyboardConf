@@ -14,7 +14,7 @@
     },
     "layouts": {
         "labels": [
-            "7U Spacebar",
+            "HHKB 7U Spacebar",
             "Split Backspace",
             "Split Right Shift"
         ],
@@ -168,7 +168,8 @@
                 {
                     "y": 0.5,
                     "x": 2.75,
-                    "w": 1.5
+                    "w": 1.5,
+                    "d": true
                 },
                 "4,0\n\n\n0,1",
                 "4,1\n\n\n0,1",
@@ -189,7 +190,8 @@
                 "4,13\n\n\n0,1",
                 {
                     "c": "#aaaaaa",
-                    "w": 1.5
+                    "w": 1.5,
+                    "d": true
                 },
                 "4,14\n\n\n0,1"
             ]
