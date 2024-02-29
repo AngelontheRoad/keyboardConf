@@ -25,30 +25,39 @@
 
 const rgblight_segment_t PROGMEM layer_basic[] = RGBLIGHT_LAYER_SEGMENTS(
     {0,1, HSV_CHARTREUSE},
-    {1,3, HSV_PURPLE},
-    {4,3, HSV_PINK},
-    {7,3, HSV_GOLDENROD},
-    {10,3, HSV_GOLD}
+    {1,1, HSV_RED},
+    {2,1, HSV_MAGENTA},
+    {3,2, HSV_PINK},
+    {5,1, HSV_MAGENTA},
+    {6,1, HSV_RED},
+    {7,1, HSV_YELLOW},
+    {8,1, HSV_CORAL},
+    {9,1, HSV_GOLD},
+    {10,1, HSV_GOLDENROD},
+    {11,1, HSV_ORANGE},
+    {12,1, HSV_CORAL}
 );
 const rgblight_segment_t PROGMEM layer_add[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,3, HSV_MAGENTA}, // between purple and red
-    {3,2, HSV_CORAL},
-    {5,2, HSV_YELLOW},
-    {7,2, HSV_YELLOW},
-    {9,2, HSV_CORAL},
-    {11,2, HSV_MAGENTA}
+    {0,3, HSV_YELLOW},
+    {3,2, HSV_GOLDENROD},
+    {4,2, HSV_AZURE},
+    {7,3, HSV_AZURE},
+    {10,1, HSV_CORAL},
+    {11,2, HSV_ORANGE}
 );
 const rgblight_segment_t PROGMEM layer_mousekey[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,4, HSV_BLUE},
-    {4,3, HSV_RED},
-    {7,3, HSV_RED},
-    {10,3, HSV_BLUE}
+    {0,4, HSV_RED},
+    {4,3, HSV_BLUE},
+    {7,3, HSV_BLUE},
+    {10,3, HSV_RED}
 );
 const rgblight_segment_t PROGMEM layer_fn[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,4, HSV_TURQUOISE},
-    {4,3, HSV_SPRINGGREEN},
-    {7,3, HSV_SPRINGGREEN},
-    {10,3, HSV_TURQUOISE}
+    {0,2, HSV_TURQUOISE},
+    {2,3, HSV_BLUE},
+    {5,2, HSV_TEAL},
+    {7,2, HSV_TEAL},
+    {9,3, HSV_BLUE},
+    {12,1, HSV_TURQUOISE}
 );
 const rgblight_segment_t PROGMEM layer_capsplus[] = RGBLIGHT_LAYER_SEGMENTS(
     {0,3, HSV_CYAN},
@@ -59,7 +68,12 @@ const rgblight_segment_t PROGMEM layer_capsplus[] = RGBLIGHT_LAYER_SEGMENTS(
     {11,2, HSV_CYAN}
 );
 const rgblight_segment_t PROGMEM layer_capspro[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,13, HSV_PURPLE}
+    {0,3, HSV_CHARTREUSE},
+    {3,1, HSV_SPRINGGREEN},
+    {4,3, HSV_GREEN},
+    {7,3, HSV_GREEN},
+    {10,1, HSV_SPRINGGREEN},
+    {11,2, HSV_CHARTREUSE}
 );
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(

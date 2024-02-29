@@ -6,7 +6,10 @@
 #define RGBLIGHT_DEFAULT_VAL 75
 #define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_LAYERS 6
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6
+// #define NO_ACTION_ONESHOT
+// #define NO_ACTION_TAPPING
+#define FORCE_NKRO
+#define MOUSEKEY_MAX_SPEED 8
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
