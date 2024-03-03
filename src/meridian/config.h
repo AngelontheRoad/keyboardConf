@@ -17,15 +17,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define RGBLED_NUM 3
-#define WS2812_SPI SPID2
-#define WS2812_SPI_MOSI_PAL_MODE 0
-#define WS2812_SPI_SCK_PAL_MODE 0
-#define WS2812_SPI_SCK_PIN B13
-
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
-
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define MOUSEKEY_MAX_SPEED 8
+#define FORCE_NKRO
+#define RGBLIGHT_LAYERS_RETAIN_VAL
+#define RGBLIGHT_LIMIT_VAL 150
+#define RGBLIGHT_DEFAULT_VAL 75
