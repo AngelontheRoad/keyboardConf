@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 #define MOUSEKEY_MAX_SPEED 8
 #define FORCE_NKRO
+#define RGBLIGHT_LAYERS 8
 #define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_LIMIT_VAL 150
-#define RGBLIGHT_DEFAULT_VAL 75
+#define RGBLIGHT_DEFAULT_VAL 125
