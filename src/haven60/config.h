@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
-#define RGBLIGHT_LIMIT_VAL 150
-#define RGBLIGHT_DEFAULT_VAL 75
+#define RGBLIGHT_LIMIT_VAL 125
+#define RGBLIGHT_DEFAULT_VAL 50
 #define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_LAYERS 6
 #define FORCE_NKRO
-#define MOUSEKEY_MAX_SPEED 8
+#define MOUSEKEY_TIME_TO_MAX 45
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.

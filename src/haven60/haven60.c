@@ -17,15 +17,15 @@
 #include "quantum.h"
 
 #define _BASIC 0
-#define _ADD 1
+#define _SYMBOL 1
 #define _MOUSEKEY 2
 #define _FN 3
 #define _CAPSPLUS 4
-#define _CAPSPRO 5
+#define _WM 5
 
 const rgblight_segment_t PROGMEM layer_basic[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,1, HSV_CHARTREUSE},
-    {1,1, HSV_RED},
+    {0,1, HSV_BLACK},
+    {1,1, HSV_CHARTREUSE},
     {2,1, HSV_MAGENTA},
     {3,2, HSV_PINK},
     {5,1, HSV_MAGENTA},
@@ -37,8 +37,9 @@ const rgblight_segment_t PROGMEM layer_basic[] = RGBLIGHT_LAYER_SEGMENTS(
     {11,1, HSV_ORANGE},
     {12,1, HSV_CORAL}
 );
-const rgblight_segment_t PROGMEM layer_add[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,3, HSV_YELLOW},
+const rgblight_segment_t PROGMEM layer_symbol[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0,1, HSV_BLACK},
+    {1,2, HSV_YELLOW},
     {3,2, HSV_GOLDENROD},
     {4,2, HSV_AZURE},
     {7,3, HSV_AZURE},
@@ -46,13 +47,15 @@ const rgblight_segment_t PROGMEM layer_add[] = RGBLIGHT_LAYER_SEGMENTS(
     {11,2, HSV_ORANGE}
 );
 const rgblight_segment_t PROGMEM layer_mousekey[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,4, HSV_RED},
+    {0,1, HSV_BLACK},
+    {1,3, HSV_RED},
     {4,3, HSV_BLUE},
     {7,3, HSV_BLUE},
     {10,3, HSV_RED}
 );
 const rgblight_segment_t PROGMEM layer_fn[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2, HSV_TURQUOISE},
+    {0,1, HSV_BLACK},
+    {1,1, HSV_TURQUOISE},
     {2,3, HSV_BLUE},
     {5,2, HSV_TEAL},
     {7,2, HSV_TEAL},
@@ -60,15 +63,17 @@ const rgblight_segment_t PROGMEM layer_fn[] = RGBLIGHT_LAYER_SEGMENTS(
     {12,1, HSV_TURQUOISE}
 );
 const rgblight_segment_t PROGMEM layer_capsplus[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,3, HSV_CYAN},
+    {0,1, HSV_BLACK},
+    {1,2, HSV_CYAN},
     {3,2, HSV_YELLOW},
     {5,2, HSV_CHARTREUSE},
     {7,2, HSV_CHARTREUSE},
     {9,2, HSV_YELLOW},
     {11,2, HSV_CYAN}
 );
-const rgblight_segment_t PROGMEM layer_capspro[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,3, HSV_CHARTREUSE},
+const rgblight_segment_t PROGMEM layer_wm[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0,1, HSV_BLACK},
+    {1,2, HSV_CHARTREUSE},
     {3,1, HSV_SPRINGGREEN},
     {4,3, HSV_GREEN},
     {7,3, HSV_GREEN},
@@ -78,11 +83,11 @@ const rgblight_segment_t PROGMEM layer_capspro[] = RGBLIGHT_LAYER_SEGMENTS(
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     layer_basic,
-    layer_add,
+    layer_symbol,
     layer_mousekey,
     layer_fn,
     layer_capsplus,
-    layer_capspro
+    layer_wm
 );
 
 void keyboard_post_init_user(void) {
@@ -92,11 +97,11 @@ void keyboard_post_init_user(void) {
 
 layer_state_t layer_state_set_kb(layer_state_t state) {
     rgblight_set_layer_state(_BASIC, layer_state_cmp(state, _BASIC));
-    rgblight_set_layer_state(_ADD, layer_state_cmp(state, _ADD));
+    rgblight_set_layer_state(_SYMBOL, layer_state_cmp(state, _SYMBOL));
     rgblight_set_layer_state(_MOUSEKEY, layer_state_cmp(state, _MOUSEKEY));
     rgblight_set_layer_state(_FN, layer_state_cmp(state, _FN));
     rgblight_set_layer_state(_CAPSPLUS, layer_state_cmp(state, _CAPSPLUS));
-    rgblight_set_layer_state(_CAPSPRO, layer_state_cmp(state, _CAPSPRO));
+    rgblight_set_layer_state(_WM, layer_state_cmp(state, _WM));
 
     return state;
 }
