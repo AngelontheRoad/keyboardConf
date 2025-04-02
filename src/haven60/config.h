@@ -6,8 +6,6 @@
 #define RGBLIGHT_DEFAULT_VAL 50
 #define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_LAYERS 6
-#define FORCE_NKRO
-#define MOUSEKEY_TIME_TO_MAX 45
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
