@@ -1,0 +1,28 @@
+0
+
+[["tap", "KC_END"], ["down", "KC_LSHIFT", "KC_HOME", "KC_DELETE"], ["up", "KC_DELETE", "KC_HOME", "KC_LSHIFT"]]
+
+4
+
+[["tap", "KC_LEFT", "KC_LEFT", "KC_LEFT"]]
+
+5
+
+[["tap", "KC_RIGHT", "KC_RIGHT", "KC_RIGHT"]]
+
+6
+
+[["tap", "KC_DOWN", "KC_DOWN", "KC_DOWN"]]
+
+7
+
+[["tap", "KC_UP", "KC_UP", "KC_UP"]]
+
+8
+
+[["text", "\\"], ["delay", 20], ["text", "(\\"], ["delay", 20], ["text", ")"], ["tap", "KC_LEFT", "KC_LEFT"]]
+
+9
+
+[["text", "\\"], ["delay", 20], ["text", "<\\"], ["delay", 20], ["text", ">"], ["tap", "KC_LEFT", "KC_LEFT"]]
+
