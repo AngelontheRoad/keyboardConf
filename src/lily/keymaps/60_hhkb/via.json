@@ -1,0 +1,257 @@
+{
+    "name": "Lily",
+    "vendorId": "0xa103",
+    "productId": "0x0026",
+    "matrix": {
+        "rows": 5,
+        "cols": 14
+    },
+    "keycodes": [
+        "qmk_lighting"
+    ],
+    "menus": [
+        "qmk_rgblight",
+        {
+            "label": "Indicators",
+            "content": [
+                {
+                    "label": "Left indicator",
+                    "content": [
+                        {
+                            "label": "Enable Left Indicator",
+                            "type": "toggle",
+                            "content": [
+                                "id_ind1_enabled",
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "showIf": "{id_ind1_enabled} == 1",
+                            "content": [
+                                {
+                                    "label": "Brightness",
+                                    "type": "range",
+                                    "options": [
+                                        0,
+                                        255
+                                    ],
+                                    "content": [
+                                        "id_ind1_brightness",
+                                        0,
+                                        2
+                                    ]
+                                },
+                                {
+                                    "label": "Color",
+                                    "type": "color",
+                                    "content": [
+                                        "id_ind1_color",
+                                        0,
+                                        3
+                                    ]
+                                },
+                                {
+                                    "label": "Function 1",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind1_func1",
+                                        0,
+                                        4
+                                    ]
+                                },
+                                {
+                                    "label": "Function 2",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind1_func2",
+                                        0,
+                                        5
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Central indicator",
+                    "content": [
+                        {
+                            "label": "Enable Central Indicator",
+                            "type": "toggle",
+                            "content": [
+                                "id_ind2_enabled",
+                                0,
+                                6
+                            ]
+                        },
+                        {
+                            "showIf": "{id_ind2_enabled} == 1",
+                            "content": [
+                                {
+                                    "label": "Brightness",
+                                    "type": "range",
+                                    "options": [
+                                        0,
+                                        255
+                                    ],
+                                    "content": [
+                                        "id_ind2_brightness",
+                                        0,
+                                        7
+                                    ]
+                                },
+                                {
+                                    "label": "Color",
+                                    "type": "color",
+                                    "content": [
+                                        "id_ind2_color",
+                                        0,
+                                        8
+                                    ]
+                                },
+                                {
+                                    "label": "Function 1",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind2_func1",
+                                        0,
+                                        9
+                                    ]
+                                },
+                                {
+                                    "label": "Function 2",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind2_func2",
+                                        0,
+                                        10
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Right indicator",
+                    "content": [
+                        {
+                            "label": "Enable Right Indicator",
+                            "type": "toggle",
+                            "content": [
+                                "id_ind3_enabled",
+                                0,
+                                11
+                            ]
+                        },
+                        {
+                            "showIf": "{id_ind3_enabled} == 1",
+                            "content": [
+                                {
+                                    "label": "Brightness",
+                                    "type": "range",
+                                    "options": [
+                                        0,
+                                        255
+                                    ],
+                                    "content": [
+                                        "id_ind3_brightness",
+                                        0,
+                                        12
+                                    ]
+                                },
+                                {
+                                    "label": "Color",
+                                    "type": "color",
+                                    "content": [
+                                        "id_ind3_color",
+                                        0,
+                                        13
+                                    ]
+                                },
+                                {
+                                    "label": "Function 1",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind3_func1",
+                                        0,
+                                        14
+                                    ]
+                                },
+                                {
+                                    "label": "Function 2",
+                                    "type": "dropdown",
+                                    "options": [
+                                        "None",
+                                        "Caps Lock",
+                                        "Num Lock",
+                                        "Scroll Lock",
+                                        "Layer 0",
+                                        "Layer 1",
+                                        "Layer 2",
+                                        "Layer 3"
+                                    ],
+                                    "content": [
+                                        "id_ind3_func2",
+                                        0,
+                                        15
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
